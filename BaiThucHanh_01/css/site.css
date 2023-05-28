@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 1120px;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+.fullscreen {
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+.top {
+  display: grid;
+  grid-template-columns: repeat(2, 940px);
+  grid-template-rows: auto;
+}
+.list {
+  display: flex;
+  margin-top: 25px;
+  padding-left: 200px;
+}
+.list ul {
+  text-decoration: none;
+}
+.list li {
+  margin-right: 50px;
+  list-style: none;
+  /* Xóa dấu chấm ở li */
+}
+#banner {
+  background-image: url("/images/banner.png");
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  height: 800px;
+}
+#choose_home {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: auto;
+}
+#choose_home div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-top: 120px;
+}
+.home1 {
+  background-image: url("/images/van-phong.png");
+  background-position: 25px;
+  height: 150px;
+  background-color: #fff206;
+}
+.home2 {
+  background-image: url("/images/biet-thu.png");
+  background-position: 25px;
+  background-color: #fff75e;
+}
+.home3 {
+  background-image: url("/images/can-ho.png");
+  background-position: 25px;
+  background-color: #fff206;
+}
+.home4 {
+  background-image: url("/images/nha-pho.png");
+  background-position: 25px;
+  background-color: #fff75e;
+}
+#title-cty {
+  font-size: 2rem;
+  /* font-weight: bold; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#list_home {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
+#list_home div {
+  height: 300px;
+}
+#list_home div span {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: #fff;
+  /* margin-top: 250px; */
+
+  padding-top: 250px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* z-index: 2; */
+}
+.Nha_may {
+  background-image: url("/images/nha-may.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.Showroom {
+  background-image: url("/images/showroom.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.Gioi_thieu {
+  background-image: url("/images/gioi-thieu.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+#footer-bottom {
+  background-color: #fff206;
+}
+#title-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  padding: 50px 0 50px 0;
+}
+.title-left,
+.title-center,
+.title-right {
+  line-height: 20px;
+}
+.title-right {
+  font-size: 1.3rem;
+}

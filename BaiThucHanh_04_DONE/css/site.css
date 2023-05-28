@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+a {
+  color: var(---text-primary-color);
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --container-full-width: 100%;
+  --container-normal-width: 1200px;
+  --color-root-beer: #f69631;
+  --color-dark-blur: #a19a94;
+}
+.container-full {
+  width: var(--container-full-width);
+}
+.container {
+  width: var(--container-normal-width);
+  margin: auto;
+}
+#header-top {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: auto;
+}
+.list-new-top {
+  /* padding: 20px 20px; */
+  /* margin: 20px 20px; */
+  display: flex;
+}
+.list-news-a {
+  padding: 20px 20px;
+}
+.list-news-a a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-left: 17px;
+  /* margin-top: 50px; */
+}
+.search {
+  justify-self: flex-end;
+  padding: 15px 0 20px 250px;
+  /* margin-left: 200px; */
+}
+.search input {
+  float: right;
+  padding: 5px;
+  border: 1px solid var(--color-dark-blur);
+}
+.list-info {
+  display: flex;
+}
+.list-info {
+  background-color: var(--color-root-beer);
+}
+.list-info-a {
+  padding: 28px 20px;
+}
+.image-icon {
+  padding: 15px 0 20px 140px;
+}
+.image-icon i {
+  background-color: #fbd5ad;
+  padding: 12px 13px 12px 13px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-left: 10px;
+}
+.list-info a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+.icon-top {
+  float: right;
+}
+#list-post {
+  display: grid;
+  grid-template-columns: 44% 55%;
+  grid-template-rows: auto;
+  column-gap: 5px;
+  height: 450px;
+}
+#list-post div {
+  color: #fff;
+}
+.list-post-left {
+  background-image: url("/images/msi-2019.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.title-post {
+  padding: 10px;
+  padding-top: 290px;
+  /* width: 80%; */
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+.day-post {
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.title-post {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#list-post {
+  margin-top: 40px;
+  /* height: 650px; */
+}
+.list-post-right {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.list-post-1 {
+  background-image: url("/images/msi-2019-players.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  grid-column: 1/3;
+  position: relative;
+}
+.title-post,
+.title-post-right-1,
+.title-post-right-2,
+.title-post-right-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  z-index: 2;
+}
+.list-post-left,
+.list-post-1,
+.list-post-2,
+.list-post-3 {
+  position: relative;
+}
+.title-post-right-1 {
+  padding: 10px;
+  padding-top: 120px;
+  font-size: 2.1rem;
+  /* font-weight: bold; */
+  color: #fff;
+  z-index: 1;
+}
+.list-post-2 {
+  background-image: url("/images/levi-jdk.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.title-post-right-2 {
+  padding: 10px;
+  padding-top: 130px;
+  font-size: 1.4rem;
+}
+.list-post-3 {
+  background-image: url("/images/kieu-anh-hera.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.title-post-right-3 {
+  padding: 10px;
+  padding-top: 100px;
+  font-size: 1.5rem;
+}
+#list-all-news {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-row: auto;
+}
+.image-news {
+  width: 300px;
+  height: auto;
+}
+.post-news {
+  display: flex;
+  margin-bottom: 30px;
+}
+.content-news {
+  margin-left: 20px;
+  width: 55%;
+}
+.days-news,
+.note-news {
+  color: var(--color-dark-blur);
+}
+.title-news,
+.days-news,
+.note-news {
+  margin-bottom: 10px;
+}
+.note-news {
+  font-size: 1.1rem;
+}
+.title-news {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.title-post-news div {
+  margin-top: 40px;
+  font-weight: 550;
+  font-size: 1.1rem;
+}
+.name-news {
+  font-size: 2rem;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    var(--color-root-beer) 10%,
+    transparent 25%
+  );
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  color: var(--color-root-beer);
+}
+#footer-bottom {
+  padding: 50px;
+  background-color: #383838;
+  color: #fff;
+}
+#content-bottom {
+  display: flex;
+}
+.VE_CHUNG_TOI {
+  margin-right: 50px;
+  width: 60%;
+}
+.VE_CHUNG_TOI div {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.MANG_XA_HOI {
+  width: 30%;
+}
+.MANG_XA_HOI div {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.icon-bottom {
+  margin-top: 20px;
+}
+.icon-bottom i {
+  background-color: #3e3e3e;
+  padding: 12px 13px 12px 13px;
+  /* border-radius: 5px; */
+  font-size: 1.1rem;
+  margin-left: 10px;
+  border: 1px solid rgba(225, 225, 225, 0.1);
+}
+#Copyright-botttom {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 20px 20px;
+  color: var(--color-dark-blur);
+}

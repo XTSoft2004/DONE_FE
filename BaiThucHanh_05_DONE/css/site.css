@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+:root {
+  --container-width: 1150px;
+  --container-left-width: 750px;
+  --container-right-width: 360px;
+  --color-orange: #faa21b;
+  --color-gray: #646464;
+}
+body div {
+  /* Định dạng này chỉ để test layout
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px; */
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.clearfix {
+  clear: both;
+}
+
+.container {
+  position: relative;
+  width: var(--container-width);
+  margin: 0 auto;
+  /* căn giữa */
+  overflow: auto;
+}
+.container-full {
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+.bg-orange {
+  background-image: linear-gradient(var(--color-gray), var(--color-orange));
+}
+.bg-black {
+  background-color: black;
+}
+
+/* HEADER */
+#header {
+  padding: 5px 0 5px 0;
+}
+#logo {
+  float: left;
+  width: 10%;
+}
+#hashtag {
+  float: right;
+  width: 80%;
+  margin-top: 30px;
+}
+#hashtag ul {
+  float: right;
+  list-style: none;
+}
+#hashtag li {
+  display: inline-table;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 5px;
+}
+#hashtag span {
+  color: var(--color-orange);
+}
+
+/* MENU */
+#menu {
+}
+#menu > ul {
+}
+#menu > ul > li {
+  display: inline-table;
+  width: 16%;
+  text-align: center;
+  line-height: 40px;
+}
+#menu > ul > li:hover {
+  background-color: var(--color-orange);
+}
+#menu a {
+  color: #fff;
+}
+
+/* CONTENT LAYOUT */
+.content-left,
+.content-right {
+  margin: 10px 0 0 0;
+}
+.content-left {
+  float: left;
+  width: var(--container-left-width);
+  overflow: auto;
+}
+.content-right {
+  float: right;
+  width: var(--container-right-width);
+  overflow: auto;
+}
+.row {
+  overflow: auto;
+}
+.column-1,
+.column-2,
+.column-3 {
+  float: left;
+}
+.column-1 {
+  width: 30%;
+}
+.column-2 {
+  width: 60%;
+}
+.column-3 {
+  width: 90%;
+}
+
+/* FOOTER */
+#footer {
+  border-top: 5px solid var(--color-orange);
+}
+
+/* ANOTHER STYLES */
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  /* chữ đậm */
+  font-size: 1.2rem;
+  border-left: 3px solid var(--color-orange);
+  padding: 0 0 0 10px;
+  margin: 20px 0 10px 0;
+}
+.img-h300 {
+  height: 300px;
+}
+.post {
+  margin: 10px;
+}
+.post-image {
+}
+.post-title-lg {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.post-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.title-normal,
+.title-bland {
+  margin-left: 10px;
+}
+.title-normal {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.title-bland {
+  font-size: 0.9rem;
+  color: #646464;
+}

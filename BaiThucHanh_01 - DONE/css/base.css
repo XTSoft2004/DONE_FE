@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+/* div {
+  border: 2px solid #000;
+  min-height: 50px;
+}
+img {
+  width: 100%;
+  height: auto;
+} */
+:root {
+  --color-yellow: #fff206;
+}
+.clearfix {
+  clear: both;
+}
+.container {
+  width: 1120px;
+  margin: 0 auto;
+  overflow: auto;
+  display: flex;
+}
+.header {
+  width: 100%;
+  overflow: auto;
+}
+.logo {
+  float: left;
+  display: inline-table;
+  width: 30%;
+  height: 65px;
+  background: url("/images/logo.png") no-repeat left center;
+}
+.menu {
+  float: right;
+  display: inline-table;
+  width: 60%;
+  text-align: center;
+  /* margin-top: 3%; */
+}
+.menu li {
+  display: inline-table;
+  margin: 0 10px 0 10px;
+  margin-top: 1%;
+}
+.menu li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+.banner {
+  background-image: url("/images/banner.png");
+  background-size: cover;
+  background-position: center bottom;
+  height: 60vh;
+}
+/* Form-Choose-Home */
+.title-home {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.image-home {
+  height: 150px;
+}
+.image-home img {
+  width: 100%;
+}
+#form-choose-home {
+  overflow: auto;
+  /* background-color: var(--color-yellow); */
+}
+.choose-home {
+  display: inline-table;
+  text-align: center;
+  /* Căn giữa chữ ở trong 1 layout */
+  /* padding-left: 54px; */
+  width: 280px;
+  height: 230px;
+}
+/* Title: Về Chúng Tôi */
+#title-center {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  padding: 20px 0 20px 0;
+}
+/* Form-Cty */
+.container-1 {
+  width: 1120px;
+  height: 280px;
+  margin: 0 auto;
+  overflow: auto;
+  display: flex;
+  margin-top: 15px;
+}
+.item-1 {
+  position: relative;
+  height: 270px;
+  width: 365px;
+  overflow: hidden;
+}
+.img-item-1 {
+  filter: brightness(80%);
+  mix-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+}
+.title-item-1 {
+  top: 210px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: 37%;
+  font-size: 1.2rem;
+}
+.title-item-1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Bottom-content */
+#form-title-bottom {
+  background-color: #fff206;
+}
+#title-bottom {
+  display: flex;
+  padding-bottom: 30px;
+}
+.title-left,
+.title-center,
+.title-right {
+  width: 25%;
+  margin: 20px 85px 0 0;
+  font-weight: 500;
+}
+.title-bold-bottom {
+  font-weight: bold;
+  line-height: 20px;
+}
+.title-left {
+  font-weight: bold;
+}
+.title-left b {
+  font-weight: bold;
+  line-height: 20px;
+}
